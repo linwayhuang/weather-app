@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  transition: background-color 0.3s;
+}
+#searchForm {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+#location {
+  padding: 8px;
+  flex-grow: 1;
+}
+#unitToggle {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+#weather {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+}
+#weather img {
+  max-width: 200px;
+  height: auto;
+  margin-top: 10px;
+}

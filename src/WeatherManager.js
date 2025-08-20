@@ -7,7 +7,13 @@ export function WeatherManager(apiKey) {
             if (!response.ok) throw new Error("Invalid location");
             const data = await response.json();
             console.log(data);
-            return data;
+            return {
+                location,
+                current: {temp: data.currentConditions.temp, condition: data.currentConditions.conditions },
+                forecast: data.days,
+                description: data.description,
+                units,
+            };
         } catch (error) {
             console.error("Weather error: ", error);
             throw error;
