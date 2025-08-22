@@ -28,3 +28,15 @@ body {
   height: auto;
   margin-top: 10px;
 }
+.forecast {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+.forecast li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+.forecast li:last-child {
+  border-bottom: none;
+}
